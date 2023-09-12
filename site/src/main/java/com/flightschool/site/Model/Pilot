@@ -1,0 +1,106 @@
+import java.util.Date;
+
+public class Pilot {
+    private int pilotID;
+    private String firstName;
+    private String lastName;
+    private Date dateOfBirth;
+    private String contactInformation;
+    private String certification;
+    private String licenseNumber;
+    private int flightHours;
+
+    // Constructors
+    public Pilot() {
+    }
+
+    public Pilot(String firstName, String lastName, Date dateOfBirth, String contactInformation, String certification, String licenseNumber, int flightHours) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+        this.contactInformation = contactInformation;
+        this.certification = certification;
+        this.licenseNumber = licenseNumber;
+        this.flightHours = flightHours;
+    }
+
+    // Getters and Setters (or use Lombok for automatic generation)
+    public int getPilotID() {
+        return pilotID;
+    }
+
+//    public void setPilotID(int pilotID) {
+//        this.pilotID = pilotID;
+//    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public Date getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public String getContactInformation() {
+        return contactInformation;
+    }
+
+    public void setContactInformation(String contactInformation) {
+        this.contactInformation = contactInformation;
+    }
+
+    public String getCertification() {
+        return certification;
+    }
+
+    public void setCertification(String certification) {
+        this.certification = certification;
+    }
+
+    public String getLicenseNumber() {
+        return licenseNumber;
+    }
+
+    public void setLicenseNumber(String licenseNumber) {
+        this.licenseNumber = licenseNumber;
+    }
+
+    public int getFlightHours() {
+        return flightHours;
+    }
+
+    public void setFlightHours(int flightHours) {
+        this.flightHours = flightHours;
+    }
+
+    // toString method (for debugging)
+    @Override
+    public String toString() {
+        return "Pilot{" +
+                "pilotID=" + pilotID +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", contactInformation='" + contactInformation + '\'' +
+                ", certification='" + certification + '\'' +
+                ", licenseNumber='" + licenseNumber + '\'' +
+                ", flightHours=" + flightHours +
+                '}';
+    }
+}
